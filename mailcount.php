@@ -1,6 +1,6 @@
 <?php
 
-$mbox = imap_open ("{imap.gmail.com:993/imap/ssl/novalidate-cert/norsh}Inbox", "mrango2011@gmail.com", "***********", OP_READONLY) 
+$mbox = imap_open ("{imap.gmail.com:993/imap/ssl/novalidate-cert/norsh}Inbox", "example@gmail.com", "***********", OP_READONLY) 
 or die("can't connect: " . imap_last_error()); 
 $check = imap_mailboxmsginfo($mbox); 
 $number_of_messages = $check->{'Nmsgs'};
